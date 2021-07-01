@@ -7,6 +7,7 @@ set autoindent
 set complete-=i
 set noswapfile
 
+set path+=**
 set wildmenu
 set wildignore+=*.o,*~
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
