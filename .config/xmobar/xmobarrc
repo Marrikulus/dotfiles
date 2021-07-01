@@ -1,0 +1,19 @@
+Config { font = "xft:inconsolata:size=10:antialias=true"
+        , borderColor = "black"
+        , border = TopB
+        , bgColor = "black"
+        , fgColor = "grey"
+        , position = TopP 0 276
+        , allDesktops = True
+        , commands = [ Run Wireless "wlo1" ["-t","Wifi: [<qualitybar>] <essid>"] 10
+                        , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
+                        , Run Memory ["-t","Mem: <usedratio>%"] 10
+                        , Run Swap [] 10
+                        , Run Com "uname" ["-s","-r"] "" 36000
+                        , Run Date "%b %_d %H:%M:%S" "date" 10
+                        , Run StdinReader
+                        ]
+        , sepChar = "%"
+        , alignSep = "}{"
+        , template = "%StdinReader% | %cpu% | %memory% * %swap% }{ %wlo1wi% | <fc=#ee9a00>%date%</fc>"
+        }

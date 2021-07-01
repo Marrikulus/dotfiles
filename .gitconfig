@@ -1,0 +1,10 @@
+[user]
+	name = Ingimar Svanberg Jóhannesson
+	email = ingimar.johannesson@gmail.com
+[push]
+	default = current
+[http]
+	sslVerify = false
+[core]
+	excludesfile = /home/ingimar/.gitignore
+	pager = less -x1,5

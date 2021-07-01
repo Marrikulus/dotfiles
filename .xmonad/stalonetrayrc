@@ -1,0 +1,10 @@
+geometry 12x1+1404
+icon_size 22
+kludges force_icons_size
+sticky 1
+window_type dock
+dockapp_mode simple
+window_strut auto
+skip_taskbar 1
+icon_gravity NE
+background black

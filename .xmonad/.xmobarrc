@@ -1,0 +1,33 @@
+Config { font = "xft:inconsolata:size=10:antialias=true"
+       , additionalFonts = [ "xft:Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:size=10"
+                           , "xft:Xolonium:size=10:style=Regular:antialias=true"]
+       , borderColor = "black"
+       , border = TopB
+       , bgColor = "black"
+       , fgColor = "grey"
+       , alpha = 255
+       , position = Top
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = False
+       , hideOnStart = False
+       , iconRoot = "."
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [ Run Network "wlp1s0" ["-L","0","-H","32",
+                                          "--normal","green","--high","red"] 10
+                    , Run Cpu ["-L","3","-H","50",
+                               "--normal","green","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Volume "default" "Master"
+                        ["-t", "<fn=1>\xf028</fn>: [<volumebar>]"] 10
+                    , Run Com "uname" ["-s","-r"] "" 36000
+                    , Run Date "%_d %b %Y %H:%M" "date" 300
+                    , Run StdinReader -- text coming from xmonad
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "<fn=2>%StdinReader%</fn> }{ %cpu% | %memory% | %battery% | %default:Master% | <fc=#ee9a00>%date%</fc> "
+       }

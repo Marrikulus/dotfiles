@@ -1,0 +1,400 @@
+{
+  "title": "Zig SHOWTIME",
+  "channelId": "UC2EQzAewrC10KCDFSS4j-zA"
+}
+{
+  "title": "george hotz archive",
+  "channelId": "UCwgKmJM4ZJQRJ-U5NjvR2dg"
+}
+{
+  "title": "PowerfulJRE",
+  "channelId": "UCzQUP1qoWDoEbmsQxvdjxgQ"
+}
+{
+  "title": "Projekt Melody",
+  "channelId": "UC1yoRdFoFJaCY-AGfD9W0wQ"
+}
+{
+  "title": "Timcast IRL",
+  "channelId": "UCLwNTXWEjVd2qIHLcXxQWxA"
+}
+{
+  "title": "Jackson Crawford",
+  "channelId": "UCXCxNFxw6iq-Mh4uIjYvufg"
+}
+{
+  "title": "System Crafters",
+  "channelId": "UCAiiOTio8Yu69c3XnR7nQBQ"
+}
+{
+  "title": "Gloryhammer - Topic",
+  "channelId": "UCPGTSBEsBiITt6ZaniWufag"
+}
+{
+  "title": "Sebastian Lague",
+  "channelId": "UCmtyQOKKmrMVaKuRXz02jbQ"
+}
+{
+  "title": "李子柒 Liziqi",
+  "channelId": "UCoC47do520os_4DBMEFGg4A"
+}
+{
+  "title": "ExplainingComputers",
+  "channelId": "UCbiGcwDWZjz05njNPrJU7jA"
+}
+{
+  "title": "Jabrils",
+  "channelId": "UCQALLeQPoZdZC4JNUboVEUg"
+}
+{
+  "title": "Organic Japanese with Cure Dolly",
+  "channelId": "UCkdmU8hGK4Fg3LghTVtKltQ"
+}
+{
+  "title": "Jordan B Peterson",
+  "channelId": "UCL_f53ZEJxp8TtlOkHwMV9Q"
+}
+{
+  "title": "Coding Tech",
+  "channelId": "UCtxCXg-UvSnTKPOzLH4wJaQ"
+}
+{
+  "title": "PewDiePie",
+  "channelId": "UC-lHJZR3Gqxm24_Vd_AJ5Yw"
+}
+{
+  "title": "滇西小哥 Dianxi Xiaoge",
+  "channelId": "UCQG_fzADCunBTV1KwjkfAQQ"
+}
+{
+  "title": "TheQuartering",
+  "channelId": "UCfwE_ODI1YTbdjkzuSi1Nag"
+}
+{
+  "title": "DevDungeon",
+  "channelId": "UCgkG68BiCngkoV7I2BLtAVg"
+}
+{
+  "title": "Val Riazanov",
+  "channelId": "UCpwE1iz_HDgmOfM0XvXToWQ"
+}
+{
+  "title": "ironmouse",
+  "channelId": "UChgPVLjqugDQpRLWvC7zzig"
+}
+{
+  "title": "RedHeadRedemption",
+  "channelId": "UCpHZ2Zja5MDrAv1L577Z-TQ"
+}
+{
+  "title": "The Toxic Avenger - Topic",
+  "channelId": "UCb0uFIYbuHXL6EaKB4TJQkw"
+}
+{
+  "title": "Computerphile",
+  "channelId": "UC9-y-6csu5WGm29I7JiwpnA"
+}
+{
+  "title": "Jonathan Blow",
+  "channelId": "UCCuoqzrsHlwv1YyPKLuMDUQ"
+}
+{
+  "title": "EleineOfficial",
+  "channelId": "UC-qh9BjWMT_6cogytAY4YOA"
+}
+{
+  "title": "archenemyofficial",
+  "channelId": "UCIPN3XIDtyAVP6GWYsE7pQQ"
+}
+{
+  "title": "Unleash The Archers",
+  "channelId": "UCSm88leWGF-2GxgitSdQ7Zw"
+}
+{
+  "title": "Týr",
+  "channelId": "UCjJx8SH8sfh7ruD1495kAHg"
+}
+{
+  "title": "Un jour Une recette",
+  "channelId": "UCBbVof4rmlPeIGG-rd8xD7g"
+}
+{
+  "title": "OfficialHeidevolk",
+  "channelId": "UCnZ07MggZug6Sjj3e2PcXjA"
+}
+{
+  "title": "Iridescence",
+  "channelId": "UCSTmaB4YZmnyUSAoerATnsg"
+}
+{
+  "title": "Dapper Dino",
+  "channelId": "UCjCpZyil4D8TBb5nVTMMaUw"
+}
+{
+  "title": "Tensor Programming",
+  "channelId": "UCYqCZOwHbnPwyjawKfE21wg"
+}
+{
+  "title": "Brothers of Metal Official",
+  "channelId": "UCjTRADohcFt4lKeVrd0Kuxg"
+}
+{
+  "title": "Heilung",
+  "channelId": "UC3Jvz7FpBsY73_wEjFV67wQ"
+}
+{
+  "title": "wardruna",
+  "channelId": "UCoK2X3nnuG7ug-Kk75r5rJQ"
+}
+{
+  "title": "Korpiklaani",
+  "channelId": "UCKTIpsCAjdIHCKQxXldqlSg"
+}
+{
+  "title": "Ensiferum",
+  "channelId": "UCJSZkYiD1tDoyw2icpflQRQ"
+}
+{
+  "title": "Andrew Kelley",
+  "channelId": "UCUICU6mgcyGy61pojwuWyHA"
+}
+{
+  "title": "LiveOverflow",
+  "channelId": "UClcE-kVhqyiHCcjYwcpfj9w"
+}
+{
+  "title": "RivalMaverick",
+  "channelId": "UCrt3jl_FVXXWDPaC9WR195Q"
+}
+{
+  "title": "howtomakeemusic",
+  "channelId": "UCwCpw1Gb5ZfLR3Jzl0VZ5vg"
+}
+{
+  "title": "Arith Härger",
+  "channelId": "UCYac9irNGo3pSrvc_L8HERw"
+}
+{
+  "title": "sydsnap",
+  "channelId": "UCWH4JkQWioU3vTAritHDnAA"
+}
+{
+  "title": "Michael Reeves",
+  "channelId": "UCtHaxi4GTYDpJgMSGy7AeSw"
+}
+{
+  "title": "Jorge Rodriguez",
+  "channelId": "UCEhBM2x5MG9-e_JSOzU068w"
+}
+{
+  "title": "China Unscripted",
+  "channelId": "UCvr1DclUsRzNYXWOWJ7eVLQ"
+}
+{
+  "title": "Tibees",
+  "channelId": "UC52kszkc08-acFOuogFl5jw"
+}
+{
+  "title": "China Uncensored",
+  "channelId": "UCgFP46yVT-GG4o1TgXn-04Q"
+}
+{
+  "title": "sentdex",
+  "channelId": "UCfzlCWGWYyIQ0aLC5w48gBQ"
+}
+{
+  "title": "Bill Burr",
+  "channelId": "UCAp990eMLzmei84WNR4ptgA"
+}
+{
+  "title": "Cᐩᐩ Weekly With Jason Turner",
+  "channelId": "UCxHAlbZQNFU2LgEtiqd2Maw"
+}
+{
+  "title": "MyBook",
+  "channelId": "UCUGmk72YLzJW158J522b5Yg"
+}
+{
+  "title": "Zen World",
+  "channelId": "UCNRD06rR7bR0Xwd-7gAKDEA"
+}
+{
+  "title": "Jonna Jinton",
+  "channelId": "UCAk3t7WHs2zjsZpopox8Taw"
+}
+{
+  "title": "Strat-Edgy Productions",
+  "channelId": "UCQYHTF4v3Yo-Cj1MRFShb7Q"
+}
+{
+  "title": "Brainlet",
+  "channelId": "UC7UiChjgT_LDKcr_8NEEbMA"
+}
+{
+  "title": "Collective Intelligence",
+  "channelId": "UCAccdtAWZmwxpBSZLPe2AtQ"
+}
+{
+  "title": "Lindsay Shepherd",
+  "channelId": "UCTjxmzChimJa3X_rAgLAnxg"
+}
+{
+  "title": "Best Unintentional ASMR",
+  "channelId": "UCI4J4Aog35UbQ_wq4KPW75Q"
+}
+{
+  "title": "Xidnaf",
+  "channelId": "UCByBOwwOU5tKddYpsrHiUUw"
+}
+{
+  "title": "imbuefx",
+  "channelId": "UCA-sP_G8gDY0V9YOOpK7V1g"
+}
+{
+  "title": "Cody Ko",
+  "channelId": "UCfp86n--4JvqKbunwSI2lYQ"
+}
+{
+  "title": "Fun Fun Function",
+  "channelId": "UCO1cgjhGzsSYb1rsB4bFe4Q"
+}
+{
+  "title": "Heri Joensen",
+  "channelId": "UCILuhlYraCxIdxlrlB-0L7Q"
+}
+{
+  "title": "laempie and the lovelies",
+  "channelId": "UCyKF9FafoRauY2F05eE1ZwQ"
+}
+{
+  "title": "SCNR",
+  "channelId": "UCLMSv1UJp9sfoHyo-9s6sdw"
+}
+{
+  "title": "Boyinaband",
+  "channelId": "UCQ4FyiI_1mWI2AtLS5ChdPQ"
+}
+{
+  "title": "Mike Norton",
+  "channelId": "UCMk7z_e13hv5hPNyF_y0ITw"
+}
+{
+  "title": "Tim Pool",
+  "channelId": "UCG749Dj4V2fKa143f8sE60Q"
+}
+{
+  "title": "Paul Joseph Watson",
+  "channelId": "UCittVh8imKanO_5KohzDbpg"
+}
+{
+  "title": "Sargon of Akkad",
+  "channelId": "UC-yewGHQbNFpDrGM0diZOLA"
+}
+{
+  "title": "Count Dankula 2 : Electric Boogaloo",
+  "channelId": "UCRLO8HU2LWaMH6mjbQ1falQ"
+}
+{
+  "title": "The Thinkery",
+  "channelId": "UCpiCH7qvGVlzMOqy3dncA5Q"
+}
+{
+  "title": "Count Dankula",
+  "channelId": "UC7SeFWZYFmsm1tqWxfuOTPQ"
+}
+{
+  "title": "Aloona Larionova",
+  "channelId": "UCaN8ossBe8E195tJTl_6ROA"
+}
+{
+  "title": "George Bruno",
+  "channelId": "UCghz8w8iOn3PDpYi9QuC3bQ"
+}
+{
+  "title": "Anime Philosopher",
+  "channelId": "UClmrEouTBM5JI7m2CGdjd9A"
+}
+{
+  "title": "PunchProfessor",
+  "channelId": "UCHoLzntJOKuJmMwlumKNWmw"
+}
+{
+  "title": "Mikhaila Peterson",
+  "channelId": "UC6Hyj5sVbiYhpc_FA14nziw"
+}
+{
+  "title": "You Suck At Cooking",
+  "channelId": "UCekQr9znsk2vWxBo3YiLq2w"
+}
+{
+  "title": "Christy0Misty",
+  "channelId": "UCFPg_8UWITUFlCzdF598fjA"
+}
+{
+  "title": "Ramsey Dewey",
+  "channelId": "UCZ1_aQv6fcdRcDDqs2XzA7w"
+}
+{
+  "title": "Real Russian Club",
+  "channelId": "UCyJznKYS9kkP7RWWq3YAbFw"
+}
+{
+  "title": "Hello Future Me",
+  "channelId": "UCFQMO-YL87u-6Rt8hIVsRjA"
+}
+{
+  "title": "Adam Millard - The Architect of Games",
+  "channelId": "UCY3A_5R_m3PXCn5XDhvBBsg"
+}
+{
+  "title": "ContraPoints",
+  "channelId": "UCNvsIonJdJ5E4EXMa65VYpA"
+}
+{
+  "title": "DevTips",
+  "channelId": "UCyIe-61Y8C4_o-zZCtO4ETQ"
+}
+{
+  "title": "Isis Vasconcellos",
+  "channelId": "UCBAKDzHHsomwyaliySEF_RA"
+}
+{
+  "title": "Brittany Sellner",
+  "channelId": "UCesrUK_dMDBZAf7cnjQPdgQ"
+}
+{
+  "title": "Tom Bilyeu",
+  "channelId": "UCnYMOamNKLGVlJgRUbamveA"
+}
+{
+  "title": "Diane Jennings",
+  "channelId": "UCep4XCEgpz2TZJkbk-rf5Pw"
+}
+{
+  "title": "Tarronto",
+  "channelId": "UCS-rOMMX0FEO2gGlVbNwvmQ"
+}
+{
+  "title": "Happie",
+  "channelId": "UC0lqOJRkJg_9bm3bMI89ryA"
+}
+{
+  "title": "Lauren Southern",
+  "channelId": "UCla6APLHX6W3FeNLc8PYuvg"
+}
+{
+  "title": "Michael Glenn",
+  "channelId": "UC-lq9zsLJgY9_Edi1aNxnWg"
+}
+{
+  "title": "BAM Game Development Live Streaming",
+  "channelId": "UCCaGgN8bSSJmlXxyKh2CFzA"
+}
+{
+  "title": "Sean Barrett",
+  "channelId": "UCWnRbDOPyWv4H1lTFXThStQ"
+}
+{
+  "title": "Shawn McGrath",
+  "channelId": "UCXom8XPAKOUdxF6LJB-p_ag"
+}
