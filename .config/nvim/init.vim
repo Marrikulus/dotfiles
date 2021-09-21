@@ -5,7 +5,6 @@ set t_Co=256
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set autoindent
 set complete-=i
-set noswapfile
 
 set path+=**
 set wildmenu
@@ -13,39 +12,12 @@ set wildignore+=*.o,*~
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
 set wildignore+=node_modules/*
 
-set ignorecase
-set smartcase
-set ruler
-
-set encoding=utf-8
-set scrolloff=2
-set mouse=a
-set title
-set confirm
-
-set hidden
-set exrc
-set secure
-
-set undodir=~/.cache/nvim/vimdid
-set undofile
-set lazyredraw
-set directory^=$HOME/.vim/tmp//
-
 let g:BASH_Ctrl_j = 'off'
-let mapleader = " "
 let g:buftabs_enabled = 0
+let VIMRC = '$HOME/.config/nvim/init.vim'
 
-"netrw configuration
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_winsize = 25
-let g:netrw_altv = 1
 
 call plug#begin()
-
-Plug 'w0rp/ale'
-Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
 
 Plug 'matze/vim-move'
 Plug 'tpope/vim-surround'
@@ -58,12 +30,22 @@ Plug 'b4b4r07/vim-buftabs'
 Plug 'ap/vim-css-color'
 Plug 'flazz/vim-colorschemes'
 Plug 'unblevable/quick-scope'
-
+Plug 'kana/vim-textobj-user'
+Plug 'glts/vim-textobj-comment'
 Plug 'airblade/vim-rooter'
-Plug 'vim-scripts/ctrlp.vim'
 
+Plug 'ThePrimeagen/vim-be-good'
 Plug 'machakann/vim-highlightedyank'
 Plug 'bronson/vim-trailing-whitespace'
+
+
+Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
+
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+"Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
@@ -88,31 +70,26 @@ colorscheme imonokai
 set background=dark
 
 "ALE configure
-let g:ale_completion_enabled = 1
-let g:ale_completion_autoimport = 1
-let g:ale_completion_delay = 1
-call ale#linter#Define('gdscript', {
-\ 'name': 'godot',
-\ 'lsp': 'socket',
-\ 'address': '127.0.0.1:6008',
-\ 'project_root': 'project.godot',
-\})
-let g:ale_linters              = {
-\   'rust': ['cargo'],
-\   'hack': ['hack', 'hhast'],
-\}
+"if &rtp =~ 'ale'
+"    let g:ale_completion_enabled = 1
+"    let g:ale_completion_autoimport = 1
+"    let g:ale_completion_delay = 1
+"    call ale#linter#Define('gdscript', {
+"    \ 'name': 'godot',
+"    \ 'lsp': 'socket',
+"    \ 'address': '127.0.0.1:6008',
+"    \ 'project_root': 'project.godot',
+"    \})
+"    let g:ale_linters              = {
+"    \   'rust': ['cargo'],
+"    \   'hack': ['hack', 'hhast'],
+"    \}
+"endif
 
-if has('nvim')
-    set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
-else
-    set completeopt=longest,menuone ",noselect,noinsert
-    inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-endif
-
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|data|target|dist)|(\.(swp|ico|git|svn))$'
-let g:ctrlp_max_depth=40
-let g:ctrlp_max_files=0
-let g:ctrlp_by_filename=1
+"let g:ctrlp_custom_ignore = '\v[\/](node_modules|data|target|dist)|(\.(swp|ico|git|svn))$'
+"let g:ctrlp_max_depth=40
+"let g:ctrlp_max_files=0
+"let g:ctrlp_by_filename=1
 
 " The Silver Searcher
 if executable('ag')
@@ -120,11 +97,11 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
+  "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  "let g:ctrlp_use_caching = 0
 endif
+
+let mapleader = " "
 
 " Nops and fixes
 nmap <Up>    <Nop>
@@ -139,7 +116,7 @@ nnoremap q: <Nop>
 nnoremap Q <Nop>
 com! W w
 
-"quickfix
+"Tabs
 nnoremap <Tab> >>
 nnoremap <S-Tab> <<
 vnoremap <Tab> >><Esc>gv
@@ -159,10 +136,15 @@ nnoremap <silent> <S-Right> :TmuxNavigateRight<cr>
 nnoremap <silent> <S-Down> :TmuxNavigateDown<cr>
 nnoremap <silent> <S-Up> :TmuxNavigateUp<cr>
 
-"quickfix
-nmap <Leader>ck :cprev<CR>
-nmap <Leader>cj :cnext<CR>
-nmap <Leader>co >copen<CR>
-nmap <Leader>cc >cclose<CR>
+"quickfix list
+nmap <C-k> :cprev<CR>zz
+nmap <C-j> :cnext<CR>zz
+nmap <Leader>co :copen<CR>
+nmap <Leader>cc :cclose<CR>
+
+nmap <Leader>gs :Git<CR>
+nmap <Leader>w :bd<CR>
+
+nmap <Leader><Leader> @:
 
 
