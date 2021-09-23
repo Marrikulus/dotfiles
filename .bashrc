@@ -11,12 +11,12 @@ export TERM="xterm-256color"
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
 
-export XDG_CONFIG_HOME="~/.config"
-export XDG_CACHE_HOME="~/.cache"
-export XDG_DATA_HOME="~/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
 
 alias vim='nvim'
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
 
 stty -ixon
 
