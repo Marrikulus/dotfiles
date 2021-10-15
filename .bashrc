@@ -166,6 +166,7 @@ export LESSHISTFILE=-
 
 alias kk="du -xsch .[!.]* * |sort -h"
 alias project_name="head /dev/urandom | tr -dc a-z | head -c2 | xargs look | shuf |head -n1"
+alias df='df -x"squashfs"'
 
 
 cp_exe_from_pkg(){
@@ -190,8 +191,5 @@ body(){
     "$@"
 }
 
-
-
 source <(kubectl completion bash)
-#source ~/.bash_completion/alacritty
 
