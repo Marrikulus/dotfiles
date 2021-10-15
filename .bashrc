@@ -17,8 +17,11 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 alias vim='nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
+alias cit='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
 
-stty -ixon
+if [ $(lsb_release -is) == "ArcoLinux" ]; then
+    stty -ixon
+fi
 
 export HISTCONTROL=ignoreboth
 export HISTSIZE=1000
