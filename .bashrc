@@ -121,17 +121,19 @@ fi
 if [ -r /home/ingimar/.byobu/prompt ]; then
     . /home/ingimar/.byobu/prompt   #byobu-prompt#
 fi
-
-if [ "$SSH_AGENT_PID" != "" ] && ps -p $SSH_AGENT_PID > /dev/null
+if [ $(lsb_release -is) != "Ubuntu" ]
 then
-    ssh-add -L > /dev/null
-    if [ $? -eq 1 ]
+    if [ "$SSH_AGENT_PID" != "" ] && ps -p $SSH_AGENT_PID > /dev/null
     then
+        ssh-add -L > /dev/null
+        if [ $? -eq 1 ]
+        then
+            ssh-add
+        fi
+    else
+        eval $(ssh-agent -s)
         ssh-add
     fi
-else
-    eval $(ssh-agent -s)
-    ssh-add
 fi
 
 # PATHS
