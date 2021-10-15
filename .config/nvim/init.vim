@@ -24,7 +24,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'iberianpig/tig-explorer.vim'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'b4b4r07/vim-buftabs'
 Plug 'ap/vim-css-color'
@@ -33,24 +32,18 @@ Plug 'unblevable/quick-scope'
 Plug 'kana/vim-textobj-user'
 Plug 'glts/vim-textobj-comment'
 Plug 'airblade/vim-rooter'
+Plug 'editorconfig/editorconfig-vim'
 
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'machakann/vim-highlightedyank'
 Plug 'bronson/vim-trailing-whitespace'
 
-
-Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
-
+Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-"Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
 
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -66,52 +59,10 @@ Plug 'hhvm/vim-hack'
 call plug#end()
 
 colorscheme imonokai
-"colorscheme gruvbox
 set background=dark
-
-"ALE configure
-"if &rtp =~ 'ale'
-"    let g:ale_completion_enabled = 1
-"    let g:ale_completion_autoimport = 1
-"    let g:ale_completion_delay = 1
-"    call ale#linter#Define('gdscript', {
-"    \ 'name': 'godot',
-"    \ 'lsp': 'socket',
-"    \ 'address': '127.0.0.1:6008',
-"    \ 'project_root': 'project.godot',
-"    \})
-"    let g:ale_linters              = {
-"    \   'rust': ['cargo'],
-"    \   'hack': ['hack', 'hhast'],
-"    \}
-"endif
-
-"let g:ctrlp_custom_ignore = '\v[\/](node_modules|data|target|dist)|(\.(swp|ico|git|svn))$'
-"let g:ctrlp_max_depth=40
-"let g:ctrlp_max_files=0
-"let g:ctrlp_by_filename=1
-
-" The Silver Searcher
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-  "let g:ctrlp_use_caching = 0
-endif
 
 let mapleader = " "
 
-" Nops and fixes
-nmap <Up>    <Nop>
-nmap <Down>  <Nop>
-nmap <Left>  <Nop>
-nmap <Right> <Nop>
-imap <Up>    <Nop>
-imap <Down>  <Nop>
-imap <Left>  <Nop>
-imap <Right> <Nop>
 nnoremap q: <Nop>
 nnoremap Q <Nop>
 com! W w
