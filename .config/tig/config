@@ -1,17 +1,16 @@
 set tab-size = 4
 
 bind generic s none
-bind status <Esc> view-close
-bind generic p @sh -c 'git push origin master > /dev/null'
-bind main s view-status
+bind generic c !git commit
+#bind generic p @sh -c 'git push origin master > /dev/null'
+bind generic p +sh -c 'git push origin master > /dev/null && echo "Done" || echo "Fail"'
 
+bind main s view-status
+bind stage s status-update
+
+bind status <Esc> view-close
 bind status s status-update
 bind status d enter
-bind status c @sh -c 'git commit > /dev/null'
+bind status C !git commit --amend
 
-bind stage s status-update
 #bind diff w :echo hi %(blob) bl
-
-# This needs tig version 2.3 or higher to work
-#bind generic p +sh -c 'git push origin master > /dev/null && echo "Done" || echo "Fail"'
-#bind status c +sh -c 'git commit > /dev/null && echo "Done" || echo "Fail"'

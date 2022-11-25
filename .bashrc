@@ -23,9 +23,11 @@ if [ $(lsb_release -is) == "ArcoLinux" ]; then
     stty -ixon
 fi
 
-export HISTCONTROL=ignoreboth
-export HISTSIZE=1000
-export HISTFILESIZE=2000
+export HISTCONTROL=ignorespace
+export HISTSIZE=5000
+export HISTFILESIZE=10000
+export HISTTIMEFORMAT="%F %T "
+export HISTIGNORE="ls:ll:history"
 
 # If not running interactively, don't do anything
 case $- in
@@ -143,6 +145,10 @@ fi
 
 if [ -d ~/bin ]; then
     export PATH="$PATH:~/bin"
+fi
+
+if [ -d ~/.local/bin ]; then
+    export PATH="$PATH:~/.local/bin"
 fi
 
 if [ -d "$HOME/.cargo/bin" ]; then
